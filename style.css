@@ -1,0 +1,47 @@
+
+ #map {
+    height: 100vmin;
+    width: 100%;
+}
+
+#info-div{
+    position:absolute;
+    top:6vmin;
+    left:0;
+    width:320px;
+    height:94vmin;
+    background-color:white;
+    box-shadow: 4px 4px 4px 4px #777;
+}
+
+#spin-icon{
+    align:center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    display:inline-block;
+    color:#373;
+    opacity:0.5;
+    font-size:74px;
+}
+#show-controller .btn-link{
+    font-size:40px;
+    color:rgb(88, 88, 10);
+	margin-left:275px;
+}
+
+#hide-controller .btn-link{
+	position:absolute;
+	top:6vmin;
+	left:0;
+    font-size:40px;
+    color:rgb(88, 88, 10);
+	background-color:white;
+	zindex:-1;
+}
+
+.row{
+	border-bottom:1px solid #aaa;
+	padding:5px;
+	width:320px;
+}
