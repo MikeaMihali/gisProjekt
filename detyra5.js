@@ -35,6 +35,9 @@ function initMap(){
     })
     })
 }
+/*
+funksioni per te bere requestin 
+**/
 function downloadUrl(url, callback) {
     var request = window.ActiveXObject ?
         new ActiveXObject('Microsoft.XMLHTTP') :

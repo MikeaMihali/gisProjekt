@@ -1,4 +1,7 @@
 <?php
+/*
+Konfigurimet e databases 
+**/
 $servername="localhost";
 $username="root";
 $password="";
@@ -7,6 +10,9 @@ $conn=mysqli_connect($servername,$username,$password,$database);
 if ($conn->connect_error) {
 	die("Connectio failed".$conn->connect_error);
 }
+/*
+Funksion per te parsuar xml per nqs name ka vlera qe mund te prishin pune tek xml
+**/
 function parseToXML($htmlStr)
 {
 $xmlStr=str_replace('<','&lt;',$htmlStr);
@@ -23,6 +29,7 @@ if (!$results) {
     die('Invalid query: ' . mysql_error());
   }
 header("Content-type: text/xml");
+// Start XML file
 echo "<?xml version='1.0' ?>";
 echo '<hotels>';
 $ind=0;
